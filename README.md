@@ -12,6 +12,9 @@ To map i.e retarget user facial emotions example: happy, sad, surprised to an av
 * Importing an avatar to blender software.
 * Detecting key points on the avatar created.
 * Retargeting facial key points to avatar key points.
+## Block diagram
+   
+![ULTIMATE_BLOCK](https://github.com/HARSHITHA123-TECH/Facial-Mapping-of-User-to-Avatar/assets/83593454/acdf505d-f80c-4a8e-9971-0409b7ded44b)
 ## Procedure
 * Face detection and facial keypoints detection is done using Dlib library.
 * why Dlib library over Opencv?
@@ -32,7 +35,14 @@ To map i.e retarget user facial emotions example: happy, sad, surprised to an av
      right), and roll (tilt to the side). By knowing the head's orientation, it becomes possible to align the 3D landmarks correctly with the person's face.Once you have the head pose, you can apply a 
       transformation to the 3D landmarks to make them consistent with the person's head orientation. This alignment is essential for ensuring that the 3D landmarks are positioned accurately relative to the 
      person's face in the virtual environment.
+     ![sahanaa1](https://github.com/HARSHITHA123-TECH/Facial-Mapping-of-User-to-Avatar/assets/83593454/df95f172-ab31-44a6-b2f8-d469865d8a99)
+     ![sahanaa2](https://github.com/HARSHITHA123-TECH/Facial-Mapping-of-User-to-Avatar/assets/83593454/c9ea641e-7768-4e6c-8c7b-8c60be0e4758)
      
+     ![sahanaa3](https://github.com/HARSHITHA123-TECH/Facial-Mapping-of-User-to-Avatar/assets/83593454/133576a0-3023-4d0e-b44e-e3a6f3ea9ff5)
+     ![sahanaa4](https://github.com/HARSHITHA123-TECH/Facial-Mapping-of-User-to-Avatar/assets/83593454/e00b19d7-1994-40d8-a977-63d442119c2a)
+
+
+
    * With knowledge of the head pose,how can you adjust the position and orientation of the avatar's head to match that of the person being tracked?
       * Obtain Head Pose Information:First, you need to estimate the head pose of the person being tracked. This typically involves determining the orientation of the head in 3D space, including parameters like 
      pitch, yaw, and roll.
@@ -49,7 +59,9 @@ To map i.e retarget user facial emotions example: happy, sad, surprised to an av
      alignment with the person's head.
      *  Render the Avatar:Render the transformed avatar with the updated head position and orientation. This means that the avatar's head will appear to follow the movements and orientation of the person being 
      tracked.
+## Demo Video
 
+https://github.com/HARSHITHA123-TECH/Facial-Mapping-of-User-to-Avatar/assets/83593454/1db79941-7f52-4ee8-9e9a-a3a79ff7ce44
 
 
 
