@@ -16,23 +16,23 @@ To map i.e retarget user facial emotions example: happy, sad, surprised to an av
    
 ![ULTIMATE_BLOCK](https://github.com/HARSHITHA123-TECH/Facial-Mapping-of-User-to-Avatar/assets/83593454/acdf505d-f80c-4a8e-9971-0409b7ded44b)
 ## Procedure
-* Face detection and facial keypoints detection is done using Dlib library.
+* Face detection and facial key points detection are done using the Dlib library.
 * why Dlib library over Opencv?
    * Opencv detects all the faces while dlib detects only those faces which are bigger in size.
    * dlib initializes a face detector object using Dlib's built-in frontal face detector model. This model is capable of detecting faces in images. When you call this function, you get a detector object that you 
-     can use to find faces in a given image.
+     can be used to find faces in a given image.
    * dlib initializes a shape predictor object using a pre-trained model file called "shape_predictor_68_face_landmarks.dat." The shape predictor is used to identify facial landmarks on a detected face. The 
-     "shape_predictor_68_face_landmarks.dat" file contains the coordinates of 68 specific facial landmarks that Dlib can recognize on a human face. These landmarks include points on the eyes, nose, mouth, and 
+     The "shape_predictor_68_face_landmarks.dat" file contains the coordinates of 68 specific facial landmarks that Dlib can recognize on a human face. These landmarks include points on the eyes, nose, mouth, and 
      other facial features.
    * dlib provides a pre-trained facial landmark detector that can detect 68 points on the face.
-   * each facial feature is mapped with a set of points.If we want for exammple to locate a mouth in the face,we can use the points from 49 to 68.
+   * each facial feature is mapped with a set of points. If we want for example to locate a mouth in the face, we can use the points from 49 to 68.
 * The primary purpose is to perform facial animation based on facial landmarks detected in a camera feed and update the 3D model accordingly.
    * Once the face is detected, the system proceeds to localize 2D facial landmarks. These are the x and y coordinates of specific points on the 2D image of the face, such as the corners of the eyes, the tip of 
      the nose, and the corners of the mouth.
    * 3D Reconstruction: To obtain 3D facial landmarks, you need to estimate the depth or Z-coordinate of these 2D landmarks. This is typically achieved through 3D facial reconstruction techniques. Common methods 
      for 3D facial reconstruction include stereo vision, structured light, and photometric stereo. These methods can estimate the depth information from the 2D image.
    * Mapping Landmarks to the 3D Model: Once the facial landmarks are detected in the 2D camera feed, they need to be mapped to corresponding points on a 3D model of a face. This mapping is often done using a 
-     process called 3D facial landmark localization, which aligns the detected 2D landmarks with the vertices of the 3D model.
+     the process called 3D facial landmark localization, which aligns the detected 2D landmarks with the vertices of the 3D model.
    * Creating a Facial Rig: A facial rig is a system of bones and control points that are applied to the 3D model's face. These control points are used to deform the 3D mesh of the model to match the movements 
      of the detected facial landmarks.
    * Pose Estimation: Estimating the head pose (orientation) of the person is important for precise 3D landmark localization. This information helps in accurately aligning the 3D landmarks with the person's face.
@@ -48,8 +48,8 @@ To map i.e retarget user facial emotions example: happy, sad, surprised to an av
 
 
 
-   * With knowledge of the head pose,how can you adjust the position and orientation of the avatar's head to match that of the person being tracked?
-      * Obtain Head Pose Information:First, you need to estimate the head pose of the person being tracked. This typically involves determining the orientation of the head in 3D space, including parameters like 
+   * With knowledge of the head pose, how can you adjust the position and orientation of the avatar's head to match that of the person being tracked?
+      * Obtain Head Pose Information: First, we need to estimate the head pose of the person being tracked. This typically involves determining the orientation of the head in 3D space, including parameters like 
      pitch, yaw, and roll.
       * Define a Coordinate System: Establish a consistent coordinate system for both the person's head and the avatar's head. This coordinate system will serve as a reference for applying transformations.
      Compute the Transformation:
@@ -59,10 +59,10 @@ To map i.e retarget user facial emotions example: happy, sad, surprised to an av
      head relative to its original position and orientation.
      *  For position adjustment (translation): Apply translation to move the avatar's head to the correct position in 3D space, matching the position of the tracked person's head. This involves adjusting the x, y, 
      and z coordinates.
-     *  For orientation adjustment (rotation):Apply rotation to align the avatar's head with the orientation of the tracked person's head. This includes adjusting the pitch, yaw, and roll angles.
-     * Update in Real Time:Continuously update the transformation as the person's head pose changes. Head pose can change due to natural head movements, allowing the avatar to respond in real-time and maintain 
+     *  For orientation adjustment (rotation): Apply rotation to align the avatar's head with the orientation of the tracked person's head. This includes adjusting the pitch, yaw, and roll angles.
+     * Update in Real Time: Continuously update the transformation as the person's head pose changes. The head pose can change due to natural head movements, allowing the avatar to respond in real-time and maintain 
      alignment with the person's head.
-     *  Render the Avatar:Render the transformed avatar with the updated head position and orientation. This means that the avatar's head will appear to follow the movements and orientation of the person being 
+     *  Render the Avatar: Render the transformed avatar with the updated head position and orientation. This means that the avatar's head will appear to follow the movements and orientation of the person being 
      tracked.
 ## Demo Video
 
