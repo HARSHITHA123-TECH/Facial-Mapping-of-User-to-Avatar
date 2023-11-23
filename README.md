@@ -21,7 +21,7 @@ To map i.e retarget user facial emotions example: happy, sad, surprised to an av
    * Opencv detects all the faces while dlib detects only those faces which are bigger in size.
    * dlib initializes a face detector object using Dlib's built-in frontal face detector model. This model is capable of detecting faces in images. When you call this function, you get a detector object that 
      can be used to find faces in a given image.
-   * dlib initializes a shape predictor object using a pre-trained model file called "shape_predictor_68_face_landmarks.dat." The shape predictor is used to identify facial landmarks on a detected face. The 
+   * dlib initializes a shape predictor object using a pre-trained model file called "shape_predictor_68_face_landmarks.dat." The shape predictor is used to identify facial landmarks on a detected face.
      The "shape_predictor_68_face_landmarks.dat" file contains the coordinates of 68 specific facial landmarks that Dlib can recognize on a human face. These landmarks include points on the eyes, nose, mouth, and 
      other facial features.
    * dlib provides a pre-trained facial landmark detector that can detect 68 points on the face.
@@ -37,7 +37,7 @@ To map i.e retarget user facial emotions example: happy, sad, surprised to an av
      of the detected facial landmarks.
    * Pose Estimation: Estimating the head pose (orientation) of the person is important for precise 3D landmark localization. This information helps in accurately aligning the 3D landmarks with the person's face.
    * Head pose estimation provides information about the orientation of the person's head in three-dimensional space. This orientation includes parameters such as pitch (tilt up or down), yaw (turn left or 
-     right), and roll (tilt to the side). By knowing the head's orientation, it becomes possible to align the 3D landmarks correctly with the person's face.Once you have the head pose, you can apply a 
+     right), and roll (tilt to the side). By knowing the head's orientation, it becomes possible to align the 3D landmarks correctly with the person's face. Once you have the head pose, you can apply a 
       transformation to the 3D landmarks to make them consistent with the person's head orientation. This alignment is essential for ensuring that the 3D landmarks are positioned accurately relative to the 
      person's face in the virtual environment.
      ![sahanaa1](https://github.com/HARSHITHA123-TECH/Facial-Mapping-of-User-to-Avatar/assets/83593454/df95f172-ab31-44a6-b2f8-d469865d8a99)
