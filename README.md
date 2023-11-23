@@ -19,7 +19,7 @@ To map i.e retarget user facial emotions example: happy, sad, surprised to an av
 * Face detection and facial key points detection are done using the Dlib library.
 * why Dlib library over Opencv?
    * Opencv detects all the faces while dlib detects only those faces which are bigger in size.
-   * dlib initializes a face detector object using Dlib's built-in frontal face detector model. This model is capable of detecting faces in images. When you call this function, you get a detector object that you 
+   * dlib initializes a face detector object using Dlib's built-in frontal face detector model. This model is capable of detecting faces in images. When you call this function, you get a detector object that 
      can be used to find faces in a given image.
    * dlib initializes a shape predictor object using a pre-trained model file called "shape_predictor_68_face_landmarks.dat." The shape predictor is used to identify facial landmarks on a detected face. The 
      The "shape_predictor_68_face_landmarks.dat" file contains the coordinates of 68 specific facial landmarks that Dlib can recognize on a human face. These landmarks include points on the eyes, nose, mouth, and 
