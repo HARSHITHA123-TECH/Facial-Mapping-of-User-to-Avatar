@@ -52,7 +52,7 @@ To map i.e retarget user facial emotions example: happy, sad, surprised to an av
       * Obtain Head Pose Information: First, we need to estimate the head pose of the person being tracked. This typically involves determining the orientation of the head in 3D space, including parameters like 
      pitch, yaw, and roll.
       * Define a Coordinate System: Establish a consistent coordinate system for both the person's head and the avatar's head. This coordinate system will serve as a reference for applying transformations.
-     Compute the Transformation:
+     
      * Calculate a transformation matrix that describes how the avatar's head needs to be adjusted to match the person's head pose. This transformation matrix should include translation (position) and rotation 
      (orientation) information.
      * Apply the Transformation: Use the calculated transformation matrix to adjust the position and orientation of the avatar's 3D model. This can be done using mathematical operations to transform the avatar's 
